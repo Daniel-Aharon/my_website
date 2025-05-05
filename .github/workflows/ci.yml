@@ -20,7 +20,7 @@ jobs:
       
       - name: Building a docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USER_NAME }}/myapp:latest
+          docker build -t ${{ secrets.DOCKER_USER_NAME }}/myapp:latest .
       
       - name: Pushing the image to DockerHub
         run: |
